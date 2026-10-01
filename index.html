@@ -1,0 +1,1618 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Cibertec Store - Cursos de tecnología">
+
+    <title>Cibertec Store | Cursos de Tecnología</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet"
+          href="css/estilos.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     NAVBAR
+===================================================== -->
+
+<header class="navbar">
+
+    <div class="navbar-container">
+
+
+        <!-- LOGO -->
+
+        <a href="#inicio"
+           class="logo">
+
+            <span class="logo-ciber">CIBER</span><span>TEC</span>
+
+        </a>
+
+
+        <!-- MENU -->
+
+        <nav class="menu">
+
+            <a href="#inicio">
+                Inicio
+            </a>
+
+            <a href="#cursos">
+                Cursos
+            </a>
+
+            <a href="#beneficios">
+                Beneficios
+            </a>
+
+            <a href="#nosotros">
+                Nosotros
+            </a>
+
+        </nav>
+
+
+        <!-- CARRITO -->
+
+        <button class="btn-carrito"
+                onclick="abrirCarrito()">
+
+            🛒
+
+            <span>
+                Carrito
+            </span>
+
+            <b id="contador-carrito">
+                0
+            </b>
+
+        </button>
+
+
+        <!-- MENU MOBILE -->
+
+        <button class="btn-menu"
+                onclick="mostrarMenu()">
+
+            ☰
+
+        </button>
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="hero"
+         id="inicio">
+
+
+    <div class="hero-container">
+
+
+        <!-- TEXTO -->
+
+        <div class="hero-content">
+
+            <div class="hero-badge">
+
+                🚀 FORMACIÓN TECNOLÓGICA
+
+            </div>
+
+
+            <h1>
+
+                Aprende tecnología.
+
+                <span>
+                    Construye tu futuro.
+                </span>
+
+            </h1>
+
+
+            <p>
+
+                Desarrolla habilidades digitales con cursos
+                prácticos de programación, bases de datos,
+                desarrollo web y ciberseguridad.
+
+            </p>
+
+
+            <div class="hero-buttons">
+
+                <a href="#cursos"
+                   class="btn-primary">
+
+                    Explorar cursos
+                    →
+
+                </a>
+
+
+                <button class="btn-secondary"
+                        onclick="mostrarVideo()">
+
+                    ▶ Ver presentación
+
+                </button>
+
+            </div>
+
+
+            <!-- ESTADISTICAS -->
+
+            <div class="hero-stats">
+
+
+                <div>
+
+                    <strong>
+                        +50
+                    </strong>
+
+                    <span>
+                        Cursos
+                    </span>
+
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        +10K
+                    </strong>
+
+                    <span>
+                        Estudiantes
+                    </span>
+
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        4.9
+                    </strong>
+
+                    <span>
+                        ⭐ Valoración
+                    </span>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+        <!-- IMAGEN -->
+
+        <div class="hero-image">
+
+            <div class="hero-card">
+
+                <div class="floating-icon icon-1">
+                    💻
+                </div>
+
+                <div class="floating-icon icon-2">
+                    🚀
+                </div>
+
+                <div class="floating-icon icon-3">
+                    ⚡
+                </div>
+
+
+                <img
+                    src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1000&q=85"
+                    alt="Estudiante aprendiendo tecnología">
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CATEGORIAS
+===================================================== -->
+
+<section class="categorias">
+
+    <div class="container">
+
+        <p class="section-subtitle">
+            EXPLORA POR CATEGORÍA
+        </p>
+
+
+        <h2>
+            Encuentra el curso que necesitas
+        </h2>
+
+
+        <div class="categoria-grid">
+
+
+            <button onclick="filtrarCategoria('programacion')">
+
+                <span>
+                    💻
+                </span>
+
+                <strong>
+                    Programación
+                </strong>
+
+                <small>
+                    12 cursos
+                </small>
+
+            </button>
+
+
+            <button onclick="filtrarCategoria('datos')">
+
+                <span>
+                    🗄️
+                </span>
+
+                <strong>
+                    Datos
+                </strong>
+
+                <small>
+                    8 cursos
+                </small>
+
+            </button>
+
+
+            <button onclick="filtrarCategoria('web')">
+
+                <span>
+                    🌐
+                </span>
+
+                <strong>
+                    Desarrollo Web
+                </strong>
+
+                <small>
+                    15 cursos
+                </small>
+
+            </button>
+
+
+            <button onclick="filtrarCategoria('seguridad')">
+
+                <span>
+                    🔐
+                </span>
+
+                <strong>
+                    Ciberseguridad
+                </strong>
+
+                <small>
+                    6 cursos
+                </small>
+
+            </button>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CURSOS
+===================================================== -->
+
+<section class="cursos"
+         id="cursos">
+
+
+    <div class="container">
+
+
+        <!-- CABECERA -->
+
+        <div class="section-header">
+
+
+            <div>
+
+                <p class="section-subtitle">
+                    APRENDE CON NOSOTROS
+                </p>
+
+                <h2>
+                    Cursos destacados
+                </h2>
+
+            </div>
+
+
+            <!-- BUSCADOR -->
+
+            <div class="buscador">
+
+                <span>
+                    🔎
+                </span>
+
+                <input
+                    type="text"
+                    id="buscador"
+                    placeholder="Buscar curso..."
+                    onkeyup="buscarCursos()">
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- FILTROS -->
+
+        <div class="filtros">
+
+            <button class="filtro activo"
+                    onclick="mostrarTodos(this)">
+
+                Todos
+
+            </button>
+
+
+            <button class="filtro"
+                    onclick="filtrarCategoria('programacion', this)">
+
+                Programación
+
+            </button>
+
+
+            <button class="filtro"
+                    onclick="filtrarCategoria('datos', this)">
+
+                Datos
+
+            </button>
+
+
+            <button class="filtro"
+                    onclick="filtrarCategoria('web', this)">
+
+                Web
+
+            </button>
+
+
+            <button class="filtro"
+                    onclick="filtrarCategoria('seguridad', this)">
+
+                Seguridad
+
+            </button>
+
+        </div>
+
+
+
+        <!-- GRID -->
+
+        <div class="cursos-grid"
+             id="lista-cursos">
+
+
+            <!-- =================================================
+                 CURSO 1
+            ================================================= -->
+
+            <article class="curso"
+                     data-categoria="datos"
+                     data-nombre="sql server bases de datos">
+
+
+                <div class="curso-imagen">
+
+
+                    <img
+                        src="https://images.unsplash.com/photo-1544383835-bda2bc66a55d?auto=format&fit=crop&w=900&q=85"
+                        alt="SQL y Bases de Datos">
+
+
+                    <span class="curso-descuento">
+                        -23%
+                    </span>
+
+
+                    <button class="favorito"
+                            onclick="favorito(this)">
+
+                        ♡
+
+                    </button>
+
+
+                </div>
+
+
+
+                <div class="curso-body">
+
+
+                    <span class="curso-categoria">
+                        BASE DE DATOS
+                    </span>
+
+
+                    <h3>
+                        SQL Server y Modelamiento de Datos
+                    </h3>
+
+
+                    <p>
+                        Aprende SQL, consultas, relaciones,
+                        procedimientos y modelamiento de bases
+                        de datos.
+                    </p>
+
+
+                    <div class="curso-rating">
+
+                        <strong>
+                            4.9
+                        </strong>
+
+                        ⭐⭐⭐⭐⭐
+
+                        <span>
+                            (328)
+                        </span>
+
+                    </div>
+
+
+                    <div class="curso-info">
+
+                        <span>
+                            ⏱ 64 horas
+                        </span>
+
+                        <span>
+                            📚 24 módulos
+                        </span>
+
+                    </div>
+
+
+                    <div class="curso-footer">
+
+
+                        <div>
+
+                            <span class="precio">
+                                S/ 499
+                            </span>
+
+                            <span class="precio-anterior">
+                                S/ 650
+                            </span>
+
+                        </div>
+
+
+                        <button
+                            class="btn-agregar"
+                            onclick="agregarCurso(
+                            'SQL Server y Modelamiento de Datos',
+                            499
+                            )">
+
+                            + Agregar
+
+                        </button>
+
+
+                    </div>
+
+
+                </div>
+
+            </article>
+
+
+
+            <!-- =================================================
+                 CURSO 2
+            ================================================= -->
+
+            <article class="curso"
+                     data-categoria="programacion"
+                     data-nombre="python fundamentals">
+
+
+                <div class="curso-imagen">
+
+
+                    <img
+                        src="https://images.unsplash.com/photo-1526379095098-d400fd0bf935?auto=format&fit=crop&w=900&q=85"
+                        alt="Python">
+
+
+                    <span class="curso-descuento">
+                        -24%
+                    </span>
+
+
+                    <button class="favorito"
+                            onclick="favorito(this)">
+
+                        ♡
+
+                    </button>
+
+
+                </div>
+
+
+
+                <div class="curso-body">
+
+
+                    <span class="curso-categoria">
+                        PROGRAMACIÓN
+                    </span>
+
+
+                    <h3>
+                        Python Fundamentals
+                    </h3>
+
+
+                    <p>
+                        Aprende programación desde cero,
+                        estructuras de control, funciones,
+                        listas y proyectos.
+                    </p>
+
+
+                    <div class="curso-rating">
+
+                        <strong>
+                            4.8
+                        </strong>
+
+                        ⭐⭐⭐⭐⭐
+
+                        <span>
+                            (415)
+                        </span>
+
+                    </div>
+
+
+                    <div class="curso-info">
+
+                        <span>
+                            ⏱ 48 horas
+                        </span>
+
+                        <span>
+                            📚 20 módulos
+                        </span>
+
+                    </div>
+
+
+                    <div class="curso-footer">
+
+
+                        <div>
+
+                            <span class="precio">
+                                S/ 459
+                            </span>
+
+                            <span class="precio-anterior">
+                                S/ 600
+                            </span>
+
+                        </div>
+
+
+                        <button
+                            class="btn-agregar"
+                            onclick="agregarCurso(
+                            'Python Fundamentals',
+                            459
+                            )">
+
+                            + Agregar
+
+                        </button>
+
+
+                    </div>
+
+
+                </div>
+
+            </article>
+
+
+
+            <!-- =================================================
+                 CURSO 3
+            ================================================= -->
+
+            <article class="curso"
+                     data-categoria="web"
+                     data-nombre="react javascript desarrollo web">
+
+
+                <div class="curso-imagen">
+
+
+                    <img
+                        src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&w=900&q=85"
+                        alt="React JS">
+
+
+                    <span class="curso-descuento">
+                        -25%
+                    </span>
+
+
+                    <button class="favorito"
+                            onclick="favorito(this)">
+
+                        ♡
+
+                    </button>
+
+
+                </div>
+
+
+
+                <div class="curso-body">
+
+
+                    <span class="curso-categoria">
+                        DESARROLLO WEB
+                    </span>
+
+
+                    <h3>
+                        React JS Application Developer
+                    </h3>
+
+
+                    <p>
+                        Construye interfaces modernas,
+                        componentes reutilizables y aplicaciones
+                        web con React.
+                    </p>
+
+
+                    <div class="curso-rating">
+
+                        <strong>
+                            4.9
+                        </strong>
+
+                        ⭐⭐⭐⭐⭐
+
+                        <span>
+                            (289)
+                        </span>
+
+                    </div>
+
+
+                    <div class="curso-info">
+
+                        <span>
+                            ⏱ 48 horas
+                        </span>
+
+                        <span>
+                            📚 18 módulos
+                        </span>
+
+                    </div>
+
+
+                    <div class="curso-footer">
+
+
+                        <div>
+
+                            <span class="precio">
+                                S/ 520
+                            </span>
+
+                            <span class="precio-anterior">
+                                S/ 690
+                            </span>
+
+                        </div>
+
+
+                        <button
+                            class="btn-agregar"
+                            onclick="agregarCurso(
+                            'React JS Application Developer',
+                            520
+                            )">
+
+                            + Agregar
+
+                        </button>
+
+
+                    </div>
+
+
+                </div>
+
+            </article>
+
+
+
+            <!-- =================================================
+                 CURSO 4
+            ================================================= -->
+
+            <article class="curso"
+                     data-categoria="programacion"
+                     data-nombre="java 17 desarrollo web">
+
+
+                <div class="curso-imagen">
+
+
+                    <img
+                        src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=900&q=85"
+                        alt="Java">
+
+
+                    <span class="curso-descuento">
+                        -24%
+                    </span>
+
+
+                    <button class="favorito"
+                            onclick="favorito(this)">
+
+                        ♡
+
+                    </button>
+
+
+                </div>
+
+
+
+                <div class="curso-body">
+
+
+                    <span class="curso-categoria">
+                        JAVA
+                    </span>
+
+
+                    <h3>
+                        Java 17 Desarrollo Web
+                    </h3>
+
+
+                    <p>
+                        Aprende Java, programación orientada
+                        a objetos, JSP, Servlets y desarrollo
+                        de aplicaciones web.
+                    </p>
+
+
+                    <div class="curso-rating">
+
+                        <strong>
+                            4.9
+                        </strong>
+
+                        ⭐⭐⭐⭐⭐
+
+                        <span>
+                            (372)
+                        </span>
+
+                    </div>
+
+
+                    <div class="curso-info">
+
+                        <span>
+                            ⏱ 56 horas
+                        </span>
+
+                        <span>
+                            📚 22 módulos
+                        </span>
+
+                    </div>
+
+
+                    <div class="curso-footer">
+
+
+                        <div>
+
+                            <span class="precio">
+                                S/ 550
+                            </span>
+
+                            <span class="precio-anterior">
+                                S/ 720
+                            </span>
+
+                        </div>
+
+
+                        <button
+                            class="btn-agregar"
+                            onclick="agregarCurso(
+                            'Java 17 Desarrollo Web',
+                            550
+                            )">
+
+                            + Agregar
+
+                        </button>
+
+
+                    </div>
+
+
+                </div>
+
+            </article>
+
+
+
+            <!-- =================================================
+                 CURSO 5
+            ================================================= -->
+
+            <article class="curso"
+                     data-categoria="seguridad"
+                     data-nombre="ciberseguridad hacking etico">
+
+
+                <div class="curso-imagen">
+
+
+                    <img
+                        src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=900&q=85"
+                        alt="Ciberseguridad">
+
+
+                    <span class="curso-descuento">
+                        -23%
+                    </span>
+
+
+                    <button class="favorito"
+                            onclick="favorito(this)">
+
+                        ♡
+
+                    </button>
+
+
+                </div>
+
+
+
+                <div class="curso-body">
+
+
+                    <span class="curso-categoria">
+                        CIBERSEGURIDAD
+                    </span>
+
+
+                    <h3>
+                        Ciberseguridad y Hacking Ético
+                    </h3>
+
+
+                    <p>
+                        Aprende fundamentos de seguridad,
+                        redes, vulnerabilidades y protección
+                        de sistemas.
+                    </p>
+
+
+                    <div class="curso-rating">
+
+                        <strong>
+                            4.8
+                        </strong>
+
+                        ⭐⭐⭐⭐⭐
+
+                        <span>
+                            (251)
+                        </span>
+
+                    </div>
+
+
+                    <div class="curso-info">
+
+                        <span>
+                            ⏱ 60 horas
+                        </span>
+
+                        <span>
+                            📚 25 módulos
+                        </span>
+
+                    </div>
+
+
+                    <div class="curso-footer">
+
+
+                        <div>
+
+                            <span class="precio">
+                                S/ 580
+                            </span>
+
+                            <span class="precio-anterior">
+                                S/ 750
+                            </span>
+
+                        </div>
+
+
+                        <button
+                            class="btn-agregar"
+                            onclick="agregarCurso(
+                            'Ciberseguridad y Hacking Ético',
+                            580
+                            )">
+
+                            + Agregar
+
+                        </button>
+
+
+                    </div>
+
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+
+
+        <!-- SIN RESULTADOS -->
+
+        <div id="sin-resultados"
+             class="sin-resultados">
+
+            😕 No encontramos cursos con esa búsqueda.
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     BANNER
+===================================================== -->
+
+<section class="banner">
+
+    <div class="banner-container">
+
+
+        <div>
+
+            <span>
+                🔥 OFERTA ESPECIAL
+            </span>
+
+
+            <h2>
+                Aprende más por menos
+            </h2>
+
+
+            <p>
+                Obtén hasta 25% de descuento en cursos
+                seleccionados.
+            </p>
+
+        </div>
+
+
+        <a href="#cursos"
+           class="btn-banner">
+
+            Ver ofertas
+
+        </a>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     BENEFICIOS
+===================================================== -->
+
+<section class="beneficios"
+         id="beneficios">
+
+
+    <div class="container">
+
+
+        <div class="section-center">
+
+            <p class="section-subtitle">
+                APRENDE CON CONFIANZA
+            </p>
+
+            <h2>
+                Todo lo que necesitas para crecer
+            </h2>
+
+        </div>
+
+
+
+        <div class="beneficios-grid">
+
+
+            <div class="beneficio">
+
+                <div class="beneficio-icon">
+                    🎓
+                </div>
+
+                <h3>
+                    Certificación
+                </h3>
+
+                <p>
+                    Obtén certificados que acrediten
+                    tus nuevas competencias.
+                </p>
+
+            </div>
+
+
+            <div class="beneficio">
+
+                <div class="beneficio-icon">
+                    👨‍💻
+                </div>
+
+                <h3>
+                    Clases prácticas
+                </h3>
+
+                <p>
+                    Aprende mediante ejercicios,
+                    proyectos y casos reales.
+                </p>
+
+            </div>
+
+
+            <div class="beneficio">
+
+                <div class="beneficio-icon">
+                    👨‍🏫
+                </div>
+
+                <h3>
+                    Profesionales
+                </h3>
+
+                <p>
+                    Aprende con docentes especializados
+                    en tecnología.
+                </p>
+
+            </div>
+
+
+            <div class="beneficio">
+
+                <div class="beneficio-icon">
+                    🚀
+                </div>
+
+                <h3>
+                    Crece profesionalmente
+                </h3>
+
+                <p>
+                    Lleva tus conocimientos a nuevos
+                    proyectos y oportunidades.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     NOSOTROS
+===================================================== -->
+
+<section class="nosotros"
+         id="nosotros">
+
+
+    <div class="nosotros-container">
+
+
+        <div class="nosotros-imagen">
+
+            <img
+                src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1000&q=85"
+                alt="Clase de tecnología">
+
+        </div>
+
+
+        <div class="nosotros-content">
+
+            <p class="section-subtitle">
+                SOBRE CIBERTEC STORE
+            </p>
+
+
+            <h2>
+                Tecnología que transforma personas
+            </h2>
+
+
+            <p>
+                Nuestro objetivo es acercar la formación
+                tecnológica a estudiantes y profesionales
+                que desean desarrollar nuevas habilidades.
+            </p>
+
+
+            <ul>
+
+                <li>
+                    ✓ Cursos orientados a proyectos
+                </li>
+
+                <li>
+                    ✓ Contenido actualizado
+                </li>
+
+                <li>
+                    ✓ Certificación
+                </li>
+
+                <li>
+                    ✓ Modalidad presencial y virtual
+                </li>
+
+            </ul>
+
+
+            <a href="#cursos"
+               class="btn-primary">
+
+                Ver cursos
+
+            </a>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     NEWSLETTER
+===================================================== -->
+
+<section class="newsletter">
+
+
+    <div class="newsletter-container">
+
+
+        <div>
+
+            <h2>
+                ¿Quieres recibir nuestras ofertas?
+            </h2>
+
+            <p>
+                Suscríbete y recibe información sobre
+                nuevos cursos y promociones.
+            </p>
+
+        </div>
+
+
+        <form onsubmit="suscribirse(event)">
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Tu correo electrónico"
+                required>
+
+
+            <button type="submit">
+
+                Suscribirme
+
+            </button>
+
+        </form>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+
+    <div class="footer-container">
+
+
+        <div class="footer-col">
+
+
+            <a href="#inicio"
+               class="logo footer-logo">
+
+                <span class="logo-ciber">
+                    CIBER
+                </span>TEC
+
+            </a>
+
+
+            <p>
+                Formación tecnológica para construir
+                el futuro digital.
+            </p>
+
+
+            <div class="social">
+
+                <a href="#">
+                    f
+                </a>
+
+                <a href="#">
+                    ◎
+                </a>
+
+                <a href="#">
+                    in
+                </a>
+
+                <a href="#">
+                    ▶
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="footer-col">
+
+            <h3>
+                Cursos
+            </h3>
+
+            <a href="#cursos">
+                Programación
+            </a>
+
+            <a href="#cursos">
+                Bases de Datos
+            </a>
+
+            <a href="#cursos">
+                Desarrollo Web
+            </a>
+
+            <a href="#cursos">
+                Ciberseguridad
+            </a>
+
+        </div>
+
+
+        <div class="footer-col">
+
+            <h3>
+                Soporte
+            </h3>
+
+            <a href="#">
+                Preguntas frecuentes
+            </a>
+
+            <a href="#">
+                Contacto
+            </a>
+
+            <a href="#">
+                Términos y condiciones
+            </a>
+
+            <a href="#">
+                Política de privacidad
+            </a>
+
+        </div>
+
+
+        <div class="footer-col">
+
+            <h3>
+                Contacto
+            </h3>
+
+            <p>
+                📍 Lima, Perú
+            </p>
+
+            <p>
+                📞 (01) 633 5555
+            </p>
+
+            <p>
+                📧 informes@cibertec.edu.pe
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 Cibertec Store — Proyecto educativo
+        </p>
+
+    </div>
+
+
+</footer>
+
+
+
+<!-- =====================================================
+     MODAL CARRITO
+===================================================== -->
+
+<div class="modal"
+     id="modal-carrito">
+
+
+    <div class="modal-contenido">
+
+
+        <div class="modal-header">
+
+            <h2>
+                🛒 Mi carrito
+            </h2>
+
+            <button onclick="cerrarCarrito()">
+                ×
+            </button>
+
+        </div>
+
+
+        <div id="contenido-carrito">
+
+            <div class="carrito-vacio">
+
+                🛒
+
+                <h3>
+                    Tu carrito está vacío
+                </h3>
+
+                <p>
+                    Agrega un curso para comenzar.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="carrito-total">
+
+            <span>
+                Total:
+            </span>
+
+            <strong id="total-carrito">
+                S/ 0
+            </strong>
+
+        </div>
+
+
+        <button class="btn-checkout"
+                onclick="finalizarCompra()">
+
+            Continuar con la inscripción
+
+        </button>
+
+
+    </div>
+
+</div>
+
+
+
+<!-- =====================================================
+     MODAL VIDEO
+===================================================== -->
+
+<div class="modal"
+     id="modal-video">
+
+
+    <div class="modal-contenido video-modal">
+
+
+        <button class="video-close"
+                onclick="cerrarVideo()">
+
+            ×
+
+        </button>
+
+
+        <div class="video-placeholder">
+
+            <div>
+                ▶
+            </div>
+
+            <h2>
+                Descubre Cibertec
+            </h2>
+
+            <p>
+                Formación tecnológica para el futuro.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+
+
+<!-- TOAST -->
+
+<div id="toast"
+     class="toast">
+
+    Curso agregado correctamente ✓
+
+</div>
+
+
+
+<!-- JAVASCRIPT -->
+
+<script src="js/app.js"></script>
+
+
+</body>
+
+</html>
